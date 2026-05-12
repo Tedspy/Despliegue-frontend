@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga BetPlay - Equipos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="container">
+        <header>
+            <h1>Fútbol Profesional Colombiano</h1>
+            <p>Descubre los equipos más emblemáticos del país</p>
+        </header>
+
+        <main>
+            <div id="loader" class="loader">
+                <div class="spinner"></div>
+                <p>Cargando equipos...</p>
+            </div>
+            
+            <div id="error-message" class="error-message hidden">
+                <p>No se pudieron cargar los datos del servidor. Asegúrate de que el backend esté corriendo en http://localhost:3000.</p>
+            </div>
+
+            <div id="equipos-grid" class="grid hidden">
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
