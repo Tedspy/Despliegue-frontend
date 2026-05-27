@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const errorMessage = document.getElementById('error-message');
 
     // URL del backend
-    const API_URL = process.env.REACT_APP_API_URL;
+    const API_URL = "http://192.168.33.11/api/equipos"
 
     // Función para obtener los datos
     const fetchEquipos = async () => {
